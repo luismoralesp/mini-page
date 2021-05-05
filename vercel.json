@@ -22,7 +22,6 @@
         }
     ],
     "env": {
-        "DATABASE": "staging",
-        "ENVIRON": "staging"
+        "SERVER_PORT": 8000
     }
 }
