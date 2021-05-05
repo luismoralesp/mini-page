@@ -1,0 +1,222 @@
+{
+  "template": "tryw3css_templates_interior_design.html",
+  "replaces": [
+
+    {
+      "query": "#mySidebar > div.w3-container > h3 > b",
+      "replacement": "FUNISAVID"
+    },
+    
+    {
+      "query": "body > header > span",
+      "replacement": "FUNISAVID"
+    },
+    
+    {
+      "query": "#showcase > h1.w3-jumbo > b",
+      "replacement": "Fundación integral salvaguardando vidas"
+    },
+    {
+      "query": "#showcase > h1.w3-xxxlarge.w3-text-red > b",
+      "replacement": "Casos de éxito"
+    },
+    {
+      "query": "body > div.w3-main > div:nth-child(2) > div:nth-child(1) > img:nth-child(1)",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso1.jpeg"]
+      }
+    },
+    {
+      "query": "body > div.w3-main > div:nth-child(2) > div:nth-child(1) > img:nth-child(2)",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso2.jpeg"]
+      }
+    },
+    {
+      "query": "body > div.w3-main > div:nth-child(2) > div:nth-child(1) > img:nth-child(3)",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso3.jpeg"]
+      }
+    },
+    {
+      "query": "body > div.w3-main > div:nth-child(2) > div:nth-child(2) > img:nth-child(1)",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso4.jpeg"]
+      }
+    },
+    {
+      "query": "body > div.w3-main > div:nth-child(2) > div:nth-child(2) > img:nth-child(2)",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso5.jpeg"]
+      }
+    },
+    {
+      "query": "body > div.w3-main > div:nth-child(2) > div:nth-child(2) > img:nth-child(3)",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso6.jpeg"]
+      }
+    },
+    {
+      "query": "#services > h1 > b",
+      "replacement": "Servicios"
+    },
+    {
+      "query": "#services > p:nth-child(3)",
+      "replacement": "En FUNISAVID te ofrecemos: "
+    },
+    {
+      "query": "#services > p:nth-child(4)",
+      "replacement": "Salud Física Mental y Espiritual, Capacitaciones, Talleres, Seminarios, Atención Médica Ancestral auniveesal bioenergética y Quiropráctica, Cultura Emprendimiento Empresarial, Acondicionamiento Físico, Artes marciales Activas y Pasivas, Actividades Deportivas y lúdicas Nutrición Cocina Integral Natural  Manejo de Stres y control  emocional  y en si todo lo que cuerpo alma y espíritu necesita para estar bien."
+    },
+    {
+      "query": "#designers > h1 > b",
+      "replacement": "Objetivos"
+    },
+    {
+      "query": "#designers > p:nth-child(3)",
+      "replacement": "En FUNISAVID te queremos:"
+    },
+    {
+      "query": "#designers > p:nth-child(4)",
+      "replacement": "Atender a la comunidad Nacional e Internacional en Salud  Paz Luz y Amor para  tener una mejor y mayor salud física y mental"
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(1) > div > div > h3",
+      "replacement": "Misión"
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(2) > div > div > h3",
+      "replacement": "Visión"
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(3) > div > div > h3",
+      "replacement": "Valores"
+    },
+
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(1) > div > div > p.w3-opacity",
+      "replacement": ""
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(2) > div > div > p.w3-opacity",
+      "replacement": ""
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(3) > div > div > p.w3-opacity",
+      "replacement": ""
+    },
+
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(1) > div > div > p:nth-child(3)",
+      "replacement": "Con un personal idóneo y capacitado estaremos ejecutando actividades que generen una mejor Salud  Saber y Libertad Financiera y tener una mejor se sociedad"
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(2) > div > div > p:nth-child(3)",
+      "replacement": "La Fundación Integral Salvaguardando Vida FUNISAVID, Se proyecta para futuro tiempo tener una mayor cobertura en el ámbito nacional e internacional en Salud Educación y Emprendimiento Conercial"
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(3) > div > div > p:nth-child(3)",
+      "replacement": "En su estructura interna la Fundación Integral Salvaguardando Vidas FUNISAVID  tendrá entre otros los siguientes valores<br>Luz Paz y Amor Salud Educación Emprendimiento    Respeto Libertad y Comunicación.   Honestidad Fidelidad y Comprensión.   Compartir Integrar Agrupar"
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(1) > div > img",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso1.jpeg"]
+      }
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(2) > div > img",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso2.jpeg"]
+      }
+    },
+    {
+      "query": "body > div.w3-main > div.w3-row-padding.w3-grayscale > div:nth-child(3) > div > img",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["src", "static/caso3.jpeg"]
+      }
+    },
+
+    {
+      "query": "#packages",
+      "replacement": { 
+        "method": "remove",
+        "params": []
+      }
+    },
+    {
+      "query": "body > div.w3-main > div:nth-child(7)",
+      "replacement": { 
+        "method": "remove",
+        "params": []
+      }
+    },
+
+
+
+
+
+    {
+      "query": "#extra-style",
+      "replacement": "b{color: #00BCD4}"
+    },
+    {
+      "query": "hr",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["style", "width:50px;border:5px solid #00897b"]
+      }
+    },
+    {
+      "query": "body > header > a",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["style", "background: #80DEEA !important;"]
+      }
+    },
+    {
+      "query": "body > header",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["style", "background-color: #00BCD4 !important"]
+      }
+    },
+    {
+      "query": "#mySidebar",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["style", "z-index:3;width:300px;font-weight:bold;background-color: #00BCD4 !important"]
+      }
+    },
+    {
+      "query": "#mySidebar > div.w3-container > h3 > b",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["style", "color: white"]
+      }
+    },
+    {
+      "query": "button",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["style", "background-color: #00BCD4 !important"]
+      }
+    },
+    {
+      "query": "#showcase > h1.w3-jumbo > b",
+      "replacement": { 
+        "method": "setAttribute",
+        "params": ["style", "color: #00897b !important"]
+      }
+    }
+  ]
+}
