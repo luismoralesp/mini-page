@@ -22,6 +22,6 @@
         }
     ],
     "env": {
-        "SERVER_PORT": 8000
+        "SERVER_PORT": "8000"
     }
 }
