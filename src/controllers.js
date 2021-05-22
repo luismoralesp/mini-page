@@ -4,7 +4,7 @@ const { parse } = require('node-html-parser');
 
 const parseTemplate = async (fullhost, config_name, path) => {
   const configResult = await axios.get(`${fullhost}/configs/${config_name}.json`);
-  const config = JSON.parse(configResult.data);
+  const config = configResult.data;
 
   if (!path) {
     path = config.template;
