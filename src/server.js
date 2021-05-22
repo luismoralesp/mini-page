@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const routes = require('./routers');
-const { SERVER_PORT = 8000 } = process.env;
+const { PORT = 8000 } = process.env;
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.use(cors());
 app.use(routes);
 
 module.exports = () => {
-  app.listen(SERVER_PORT, () => {
-    console.info('✅', '[SERVER]', 'Server running in port', SERVER_PORT);
+  app.listen(PORT, () => {
+    console.info('✅', '[SERVER]', 'Server running in port', PORT);
   });
 };
