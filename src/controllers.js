@@ -3,9 +3,9 @@ const fs = require('fs');
 const { parse } = require('node-html-parser');
 
 const parseTemplate = (config_name, path) => {
-  /*const config = require(`${__dirname}/configs/${config_name}.json`);
+  const config = require(`${__dirname}/configs/${config_name}.json`);
 
-  if (!path) {
+  /*if (!path) {
     path = config.template;
   }
 
