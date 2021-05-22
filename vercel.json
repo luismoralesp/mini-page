@@ -11,16 +11,9 @@
           "use": "@vercel/node"
         }
     ],
-    "routes" : [
-        {
-            "src": "/static/(.*)",
-            "headers": { "cache-control": "s-maxage=31536000,immutable" },
-            "dest": "/static/$1"
-        },
-        {
-            "src" : "/(.*)", "dest":"/index.js"
-        }
-    ],
+    
+    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
+
     "env": {
         "SERVER_PORT": "8000"
     }
