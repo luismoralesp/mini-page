@@ -12,7 +12,7 @@ const parseTemplate = async (fullhost, config_name, path) => {
 
   const htmlResult = await axios.get(`${fullhost}/templates/${path}`);
   const html = htmlResult.data;
-  /*const root = parse(html);
+  const root = parse(html);
   for (const {query, replacement} of config.replaces) {
     const elms = root.querySelectorAll(query);
     for (const elm of elms) {
@@ -25,8 +25,7 @@ const parseTemplate = async (fullhost, config_name, path) => {
     }
   }
 
-  return root.toString();*/
-  return html;
+  return root.toString();
 };
 
 const pathController = (req, res) => {
