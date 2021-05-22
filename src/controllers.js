@@ -4,14 +4,15 @@ const { parse } = require('node-html-parser');
 
 const parseTemplate = async (fullhost, config_name, path) => {
   const configResult = await axios.get(`${fullhost}/configs/${config_name}.json`);
-  const config = configResult.data;
+  const config = JSON.parse(configResult.data);
 
-  /*if (!path) {
+  if (!path) {
     path = config.template;
   }
 
-  const html = fs.readFileSync(`${__dirname}/templates/${path}`, 'utf-8');
-  const root = parse(html);
+  const htmlResult = await axios.get(`${fullhost}/templates/${path}`);
+  const html = htmlResult.data;
+  /*const root = parse(html);
   for (const {query, replacement} of config.replaces) {
     const elms = root.querySelectorAll(query);
     for (const elm of elms) {
@@ -25,8 +26,7 @@ const parseTemplate = async (fullhost, config_name, path) => {
   }
 
   return root.toString();*/
-
-  return config;
+  return html;
 };
 
 const pathController = (req, res) => {
