@@ -26,7 +26,7 @@ const parseTemplate = async (fullhost, config_name, path) => {
 
   return root.toString();*/
 
-  return config.data;
+  return "config.data";
 };
 
 const pathController = (req, res) => {
