@@ -5,7 +5,7 @@ const routes = require('./routers');
 const { PORT = 8000 } = process.env;
 
 const app = express();
-
+app.use(express.static('src/templates'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
