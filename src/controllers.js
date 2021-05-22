@@ -6,12 +6,12 @@ const { PORT = 8000 } = process.env;
 const parseTemplate = async (fullhost, config_name, path) => {
   const config = await axios.get(`${fullhost}/configs/${config_name}.json`);
 
-  /*if (!path) {
+  if (!path) {
     path = config.template;
   }
 
   const html = fs.readFileSync(`${__dirname}/templates/${path}`, 'utf-8');
-  const root = parse(html);
+  /*const root = parse(html);
   for (const {query, replacement} of config.replaces) {
     const elms = root.querySelectorAll(query);
     for (const elm of elms) {
