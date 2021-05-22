@@ -1,7 +1,7 @@
 const axios = require('axios');
 const { parse } = require('node-html-parser');
 
-const { PORT=8000 } = process.env
+const { PORT = 8000 } = process.env;
 
 const parseTemplate = async (fullhost, config_name, path) => {
   const config = await axios.get(`${fullhost}/configs/${config_name}.json`);
@@ -26,7 +26,7 @@ const parseTemplate = async (fullhost, config_name, path) => {
 
   return root.toString();*/
 
-  return config.data
+  return config.data;
 };
 
 const pathController = (req, res) => {
@@ -39,7 +39,7 @@ const pathController = (req, res) => {
 const indexController = (req, res) => {
   const hostname = req.hostname;
   const fullhost = `${req.protocol}://${req.host}`
-  parseTemplate(fullhost,hostname).then(r => res.send(r)) ;
+  parseTemplate(fullhost,hostname).then(r => res.send(r));
 };
 const health = (req, res) => {
   res.send('Ok.');
