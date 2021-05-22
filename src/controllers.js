@@ -1,10 +1,10 @@
 const axios = require('axios');
 const { parse } = require('node-html-parser');
 
-const { PORT = 8000 } = process.env;
 
 const parseTemplate = async (fullhost, config_name, path) => {
-  const config = fs.readFileSync(`${__dirname}/configs/${config_name}.json`);
+  const configResult = await axios.get(`${fullhost}/configs/${config_name}.json`);
+  const config = configResult.data.toString();
 
   /*if (!path) {
     path = config.template;
