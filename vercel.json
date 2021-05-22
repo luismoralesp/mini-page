@@ -14,7 +14,7 @@
     ],
     "functions": {
       "src/controllers.js": {
-        "includeFiles": "src/templates/**"
+        "includeFiles": "templates/**"
       }
     }
 }
