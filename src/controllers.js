@@ -37,8 +37,12 @@ const indexController = (req, res) => {
 
   res.send(parseTemplate(hostname));
 };
+const health = (req, res) => {
+  res.send('Ok.');
+};
 
 module.exports = {
   pathController,
-  indexController
+  indexController,
+  health
 };
