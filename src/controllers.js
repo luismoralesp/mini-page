@@ -1,8 +1,9 @@
 const fs = require('fs');
+
 const { parse } = require('node-html-parser');
 
 const parseTemplate = (config_name, path) => {
-  const config = require(`${__dirname}/configs/${config_name}.json`);
+  /*const config = require(`${__dirname}/configs/${config_name}.json`);
 
   if (!path) {
     path = config.template;
@@ -22,7 +23,9 @@ const parseTemplate = (config_name, path) => {
     }
   }
 
-  return root.toString();
+  return root.toString();*/
+
+  return "<h1>HELLO!</h1>"
 };
 
 const pathController = (req, res) => {
