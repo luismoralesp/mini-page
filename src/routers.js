@@ -6,6 +6,7 @@ const mainRouter = new Router();
 
 mainRouter.get('/health', health);
 mainRouter.use('/static', express.static(__dirname + '/static'));
+mainRouter.use('/templates', express.static(__dirname + '/templates'));
 mainRouter.get('/:path', pathController);
 mainRouter.get('/', indexController);
 
