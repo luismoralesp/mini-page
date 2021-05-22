@@ -11,5 +11,11 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
+
+    "functions": {
+      "src/controllers.js": {
+        "includeFiles": "src/templates/**"
+      }
+    }
 }
