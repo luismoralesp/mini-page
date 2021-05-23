@@ -38,7 +38,7 @@ const pathController = (req, res) => {
 
 const indexController = (req, res) => {
   const hostname = req.hostname.replace(/\W/g, '_');
-  const fullhost = `${req.protocol}://${req.host}:${PORT}`
+  const fullhost = `${req.protocol}://${req.host}`
   parseTemplate(fullhost,hostname).then(r => res.send(r));
 };
 const health = (req, res) => {
