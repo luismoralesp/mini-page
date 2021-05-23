@@ -1,5 +1,6 @@
 const axios = require('axios');
 const { parse } = require('node-html-parser');
+const { PORT = 8000 } = process.env;
 
 
 const parseTemplate = async (fullhost, config_name, path) => {
@@ -37,7 +38,7 @@ const pathController = (req, res) => {
 
 const indexController = (req, res) => {
   const hostname = req.hostname.replace(/\W/g, '_');
-  const fullhost = `${req.protocol}://${req.host}`
+  const fullhost = `${req.protocol}://${req.host}:${PORT}`
   parseTemplate(fullhost,hostname).then(r => res.send(r));
 };
 const health = (req, res) => {
